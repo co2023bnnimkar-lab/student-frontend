@@ -540,6 +540,7 @@
 </svg>
 
 <a class="sr-only" href="#main">Skip to content</a>
+<!-- Shared navigation: links switch between the app's hash-based pages. -->
 <header class="nav">
   <div class="container nav-inner">
     <a href="#/home" class="brand" aria-label="RollCall home">
@@ -576,7 +577,9 @@
     <a href="#/about" data-nav="about">About</a>
   </div>
 </header>
+<!-- Main app content: each page section is shown or hidden by the JavaScript router. -->
 <main id="main">
+<!-- Home page: introduces RollCall and previews the student roster interface. -->
 <section class="page" data-page="home">
   <!-- Hero -->
   <section class="hero">
@@ -703,6 +706,7 @@
     </div>
   </section>
 </section>
+<!-- Roster page: search, filter, sort, and manage enrolled students. -->
 <section class="page" data-page="students" aria-labelledby="h-students">
   <div class="container page-wrap">
     <div class="page-head">
@@ -743,6 +747,7 @@
     </div>
   </div>
 </section>
+<!-- Student form page: the same form supports both adding and editing entries. -->
 <section class="page" data-page="add" aria-labelledby="h-add">
   <div class="container page-wrap">
     <div class="page-head">
@@ -773,6 +778,7 @@
     </div>
   </div>
 </section>
+<!-- About page: explains the project and checks backend/database connectivity. -->
 <section class="page" data-page="about" aria-labelledby="h-about">
   <div class="container page-wrap" style="padding-bottom:clamp(20px,3vw,32px)">
     <div class="page-head" style="margin-bottom:0">
@@ -859,6 +865,7 @@
 </section>
 </main>
 
+<!-- Shared footer links to the app's main pages and social profiles. -->
 <footer class="footer">
   <div class="container foot-inner">
     <a href="#/home" class="brand"><svg class="i i-fill" aria-hidden="true"><use href="#cap"/></svg>RollCall</a>
@@ -873,6 +880,7 @@
   </div>
 </footer>
 
+<!-- Confirmation dialog helps prevent accidental student record deletion. -->
 <dialog class="modal" id="delDlg" aria-labelledby="delTitle">
   <h3 id="delTitle">Remove this entry?</h3>
   <p id="delText"></p>
@@ -883,6 +891,7 @@
 </dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <noscript><p style="padding:24px;text-align:center">Please enable JavaScript to use RollCall.</p></noscript>
+<!-- App logic: configures the API, page interactions, form actions, and hash router. -->
 <script>
 (function () {
   'use strict';
