@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RollCall - the student roster</title>
 <meta name="description" content="RollCall keeps your student list in one searchable place. Enrol, find, edit and remove students in a few clicks.">
-<meta name="theme-color" content="#0c0a0a">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="RollCall - the student roster">
 <meta property="og:description" content="One searchable roster for every enrolled student.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23b3282d'/%3E%3Cpath d='M16 7 4 13l12 6 12-6z' fill='%23fff'/%3E%3Cpath d='M9 17v5c0 2 3 4 7 4s7-2 7-4v-5l-7 3.5z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Cpath d='M16 7 4 13l12 6 12-6z' fill='%23fff'/%3E%3Cpath d='M9 17v5c0 2 3 4 7 4s7-2 7-4v-5l-7 3.5z' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -28,30 +28,30 @@
     --btn-bg: #b3282d;
     --btn-fg: #ffffff;
     --chip: #201a1a;
-    --band: #1a0e0f;
-    --band-fg: #ffffff;
+    --band: #eaf2ff;
+    --band-fg: #10213f;
     --shadow: 0 1px 2px rgba(0,0,0,.45);
     --radius: 14px;
     --container: 1120px;
     color-scheme: dark;
   }
   [data-theme="light"] {
-    --bg: #faf7f7;
-    --fg: #170f10;
-    --muted: #6f6264;
-    --muted-2: #8f8284;
-    --soft: #f3eded;
-    --line: #e6dcdc;
-    --line-strong: #170f10;
+    --bg: #f5f9ff;
+    --fg: #10213f;
+    --muted: #526783;
+    --muted-2: #8294ad;
+    --soft: #eaf2ff;
+    --line: #d8e5f7;
+    --line-strong: #173d7a;
     --card: #ffffff;
-    --accent: #a31f25;
-    --accent-hover: #8a191e;
-    --btn-bg: #a31f25;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --btn-bg: #2563eb;
     --btn-fg: #ffffff;
-    --chip: #f1e8e8;
+    --chip: #e7f0ff;
     --band: #1a0e0f;
     --band-fg: #ffffff;
-    --shadow: 0 1px 2px rgba(23,15,16,.05), 0 8px 24px rgba(23,15,16,.05);
+    --shadow: 0 1px 2px rgba(16,33,63,.04), 0 8px 24px rgba(37,99,235,.08);
     color-scheme: light;
   }
 
@@ -239,13 +239,13 @@
   .band { background: var(--band); color: var(--band-fg); border-radius: 16px; padding: 30px 48px; display: flex; align-items: center; gap: 56px; box-shadow: 0 20px 40px rgba(0,0,0,.14); }
   .band .plane { font-size: 44px; color: #e4e4e7; margin-left: 4px; }
   .band .txt { flex: 1; }
-  .band .eyebrow { color: #a1a1aa; font-size: 8.5px; }
+  .band .eyebrow { color: #526783; font-size: 8.5px; }
   .band h2 { font-size: 21px; margin-top: 8px; font-weight: 700; letter-spacing: -.01em; }
-  .band p { margin-top: 6px; font-size: 12px; color: #d4d4d8; max-width: 440px; line-height: 1.7; }
+  .band p { margin-top: 6px; font-size: 12px; color: #526783; max-width: 440px; line-height: 1.7; }
   .band .act { text-align: center; }
   .band .act .btn { width: 216px; height: 50px; font-size: 13px; }
-  .band .act small { display: block; margin-top: 14px; font-size: 11px; color: #d4d4d8; }
-  .band .act small a { color: #fff; font-weight: 700; }
+  .band .act small { display: block; margin-top: 14px; font-size: 11px; color: #526783; }
+  .band .act small a { color: #10213f; font-weight: 700; }
 
   /* ---------- Footer ---------- */
   .footer { border-top: 1px solid var(--line); }
