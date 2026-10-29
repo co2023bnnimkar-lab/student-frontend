@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RollStaff - the student roster</title>
-<meta name="description" content="RollStaff keeps your student list in one searchable place. Enrol, find, edit and remove students in a few clicks.">
+<title>King - the student roster</title>
+<meta name="description" content="King keeps your student list in one searchable place. Enrol, find, edit and remove students in a few clicks.">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="RollStaff - the student roster">
+<meta property="og:title" content="King - the student roster">
 <meta property="og:description" content="One searchable roster for every enrolled student.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Cpath d='M16 7 4 13l12 6 12-6z' fill='%23fff'/%3E%3Cpath d='M9 17v5c0 2 3 4 7 4s7-2 7-4v-5l-7 3.5z' fill='%23fff'/%3E%3C/svg%3E">
@@ -543,9 +543,9 @@
 <!-- Shared navigation: links switch between the app's hash-based pages. -->
 <header class="nav">
   <div class="container nav-inner">
-    <a href="#/home" class="brand" aria-label="RollStaff home">
+    <a href="#/home" class="brand" aria-label="King home">
       <svg class="i i-fill" aria-hidden="true"><use href="#cap"/></svg>
-      RollStaff
+      King
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#/home" data-nav="home">Home</a>
@@ -579,7 +579,7 @@
 </header>
 <!-- Main app content: each page section is shown or hidden by the JavaScript router. -->
 <main id="main">
-<!-- Home page: introduces RollStaff and previews the student roster interface. -->
+<!-- Home page: introduces King and previews the student roster interface. -->
 <section class="page" data-page="home">
   <!-- Hero -->
   <section class="hero">
@@ -590,7 +590,7 @@
           <span>Live data</span><i class="sep"></i><span>Netlify</span><i class="sep"></i><span>Render</span><i class="sep"></i><span>MongoDB Atlas</span>
         </div>
         <h1>Know who is enrolled. <span>Skip the spreadsheet.</span></h1>
-        <p class="lead">RollStaff keeps your student list in one searchable place. Enrol someone, find them by ID, fix a detail, or remove them when they leave.</p>
+        <p class="lead">King keeps your student list in one searchable place. Enrol someone, find them by ID, fix a detail, or remove them when they leave.</p>
         <div class="hero-cta">
           <a href="#/add" class="btn btn-dark"><svg class="i" aria-hidden="true"><use href="#plus"/></svg>Enrol student</a>
           <a href="#/students" class="btn btn-outline">Open roster</a>
@@ -613,7 +613,7 @@
             <div class="lt-bar"><i></i><i></i><i></i></div>
             <div class="lt-screen">
               <aside class="lt-side">
-                <div class="lt-logo"><svg class="i i-fill"><use href="#cap"/></svg>RollStaff</div>
+                <div class="lt-logo"><svg class="i i-fill"><use href="#cap"/></svg>King</div>
                 <ul class="lt-nav">
                   <li class="on"><svg class="i"><use href="#grid"/></svg>Overview</li>
                   <li><svg class="i"><use href="#plus"/></svg>Enrol student</li>
@@ -648,7 +648,7 @@
 
           <div class="phone">
             <div class="ph-notch"></div>
-            <div class="ph-top"><span><svg class="i i-fill"><use href="#cap"/></svg>RollStaff</span><svg class="i"><use href="#menu"/></svg></div>
+            <div class="ph-top"><span><svg class="i i-fill"><use href="#cap"/></svg>King</span><svg class="i"><use href="#menu"/></svg></div>
             <div class="ph-stat"><div><small>Enrolled</small><b>5</b></div><svg class="i"><use href="#users"/></svg></div>
             <div class="ph-list">
               <h6>Latest entries</h6>
@@ -784,7 +784,7 @@
     <div class="page-head" style="margin-bottom:0">
       <div>
         <div class="eyebrow">How it works</div>
-        <h1 class="h2" id="h-about">How RollStaff works</h1>
+        <h1 class="h2" id="h-about">How King works</h1>
         <p class="page-sub">Three separate pieces, each hosted on its own. If one needs a restart, the others carry on.</p>
       </div>
     </div>
@@ -868,8 +868,8 @@
 <!-- Shared footer links to the app's main pages and social profiles. -->
 <footer class="footer">
   <div class="container foot-inner">
-    <a href="#/home" class="brand"><svg class="i i-fill" aria-hidden="true"><use href="#cap"/></svg>RollStaff</a>
-    <p class="copy">&copy; <span id="yr">2026</span> RollStaff</p>
+    <a href="#/home" class="brand"><svg class="i i-fill" aria-hidden="true"><use href="#cap"/></svg>King</a>
+    <p class="copy">&copy; <span id="yr">2026</span> King</p>
     <nav class="foot-links" aria-label="Footer">
       <a href="#/home">Home</a><a href="#/students">Roster</a><a href="#/add">Enrol student</a><a href="#/about">About</a>
     </nav>
@@ -890,7 +890,7 @@
   </div>
 </dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<noscript><p style="padding:24px;text-align:center">Please enable JavaScript to use RollStaff.</p></noscript>
+<noscript><p style="padding:24px;text-align:center">Please enable JavaScript to use King.</p></noscript>
 <!-- App logic: configures the API, page interactions, form actions, and hash router. -->
 <script>
 (function () {
@@ -1221,7 +1221,7 @@
   $('recheck').addEventListener('click', checkConn);
 
   /* ---------- Router ---------- */
-  var TITLES = { home: 'RollStaff - the student roster', students: 'Roster | RollStaff', add: 'Enrol a student | RollStaff', edit: 'Edit entry | RollStaff', about: 'How it works | RollStaff' };
+  var TITLES = { home: 'King - the student roster', students: 'Roster | King', add: 'Enrol a student | King', edit: 'Edit entry | King', about: 'How it works | King' };
   var firstRoute = true;
 
   function route() {
